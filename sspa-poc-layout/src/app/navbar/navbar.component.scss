@@ -1,0 +1,24 @@
+h3 {
+  margin: 40px 0 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+
+#navbar ul {
+  border-right: 1px solid #eee;
+  // padding-top: 76px;
+}

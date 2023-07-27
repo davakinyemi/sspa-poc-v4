@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "sspa-poc-todo-lib": {
+      "projectType": "library",
+      "root": "projects/sspa-poc-todo-lib",
+      "sourceRoot": "projects/sspa-poc-todo-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/sspa-poc-todo-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sspa-poc-todo-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/sspa-poc-todo-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sspa-poc-todo-lib/src/test.ts",
+            "tsConfig": "projects/sspa-poc-todo-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/sspa-poc-todo-lib/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "sspa-poc-todo-lib"
+}

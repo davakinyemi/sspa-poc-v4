@@ -1,0 +1,11 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/sspa-poc-state-service.ts"],
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "experimentalDecorators": true,
+    "target": "es6"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}

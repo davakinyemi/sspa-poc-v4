@@ -1,0 +1,12 @@
+<div id="app-component" class="container">
+  <h1>
+    <img src="https://angular.io/assets/images/logos/angular/angular.png" width="50" height="50"> Home
+  </h1>
+  <hr>
+  <p>This is the Home page section. This section is displayed when url starts with "/" prefix.</p>
+  <nav>
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">List</a>
+    <a routerLink="/home/detail" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Detail</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

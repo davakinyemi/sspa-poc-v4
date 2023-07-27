@@ -1,0 +1,14 @@
+<div id="navbar">
+    <ul class="nav justify-content-center bg-light">
+        <li class="nav-item" [routerLinkActive]="'active'">
+            <a [routerLink]="['/home']" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="'active'">
+            <a [routerLink]="['/todos']" class="nav-link">Todos</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="'active'">
+            <!-- <a [routerLink]="['/counter']" class="nav-link">Counter <span class="badge badge-light">{{counter$ | async}}</span></a> -->
+            <a [routerLink]="['/counter']" class="nav-link">Counter <span class="badge badge-light">{{count}}</span></a>
+        </li>
+    </ul>
+</div>
